@@ -9,7 +9,7 @@ nlp.add_pipe(coref, name='neuralcoref')
 text = """
         Today was a rough day. a giant lizard destroyed my home, and The Avengers crashed my car during the fight! I 
         hate The Avengers. Also, I've been feeling sad that Jeffery got eaten by wolves. He didn't give me back my
-        Elvis records before he died, so now I feel awkward asking his mom for them back. Hello world
+        Elvis records before he died, so now I feel awkward asking his mom for them back.
         
 """
 doc = nlp(text)
