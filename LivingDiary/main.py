@@ -70,14 +70,9 @@ def pipeline_1(doc):
                     k += 1
     return return_texts.dropna()
 
-
-def pipeline_1(doc):
-    return_texts = pd.DataFrame(index=range(len(list(doc.noun_chunks))),
-                                columns=['text', 'sent_structure_', 'sent_structure', 'keywords', 'pos_tags',
-                                         'pipeline'])
-
-    # if token.root.pos_ == 'NOUN' & (token.root.dep_ == 'dobj') & (token.root.head):
-        #     break
+def pipeline_2(doc):
+    pass
+doc.noun_chunks_iterator(doc2)
 
 for token in doc:
     print(token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
