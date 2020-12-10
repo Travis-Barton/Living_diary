@@ -10,7 +10,7 @@ from matplotlib.colors import ListedColormap
 def plot_field(game_dict, colors=None):
     labels = np.array([i for i in game_dict.keys()]).reshape(5, 5)
     color_numbers = np.array([i for i in game_dict.values()]).reshape(5, 5)
-    cmap = ListedColormap(['red', 'blue', 'grey', 'black'])
+    cmap = ListedColormap(['red', 'blue', 'grey', 'white', 'black'])
     sns.heatmap(color_numbers, cmap=cmap, annot=labels, fmt='s', cbar=False)
     plt.show()
     ### Up next you are going to incorrperate this into your function, and then you are going to
